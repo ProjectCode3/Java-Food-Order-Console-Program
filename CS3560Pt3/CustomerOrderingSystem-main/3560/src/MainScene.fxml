@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu">
+   <children>
+      <Label layoutX="378.0" layoutY="14.0" prefHeight="46.0" prefWidth="103.0" text="Menu" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="341.0" prefHeight="17.0" prefWidth="75.0" text="Pizza &amp; Sides" />
+      <Label layoutX="619.0" layoutY="341.0" text="Drinks" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="191.0" onMouseClicked="#btnToPizzaMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bin/Pizza&amp;Sides.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="536.0" layoutY="197.0" onMouseClicked="#btnToDrinkMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bin/Drinks.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+   </children>
+</AnchorPane>

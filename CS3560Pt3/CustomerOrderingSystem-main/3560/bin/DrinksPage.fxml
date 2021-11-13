@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrinksPage">
+   <children>
+      <Label layoutX="372.0" layoutY="14.0" prefHeight="58.0" prefWidth="115.0" text="Drinks">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="14.0" layoutY="86.0" prefHeight="459.0" prefWidth="830.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutY="7.0" prefHeight="448.0" prefWidth="830.0">
+                     <columns>
+                        <TableColumn prefWidth="257.0" text="Items" />
+                        <TableColumn prefWidth="311.0" text="Cost" />
+                        <TableColumn prefWidth="296.0" text="Image" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenu" text="Back" />
+   </children>
+</AnchorPane>
